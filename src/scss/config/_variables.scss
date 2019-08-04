@@ -1,10 +1,19 @@
 // COLORS
 $color-primary: #241C18;
 $color-secondary: #826B60;
+$color-secondary-lighter: #948077;
 $color-tertiary: #E4DDD8;
+$color-black: #000;
+
+// FONT WEIGHT
+$weight-normal: 400;
+$weight-bolded: 700;
 
 // MEDIA QUERIES
 $xs: ( max: 767px );
 $sm: ( min: 768px );
 $md: ( min: 992px );
 $lg: ( min: 1200px );
+
+// LAYOUT
+$layout-side-padding: 10%;

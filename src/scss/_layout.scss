@@ -1,0 +1,26 @@
+.page {
+  font-family: 'Lora', sans-serif;
+  font-size: 18px;
+  color: $color-primary;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.masthead {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: $color-secondary-lighter;
+  padding: 2.5% $layout-side-padding;
+}
+
+body a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $color-black;
+}
+
+h1 {
+  font-size: 5.5em;
+}

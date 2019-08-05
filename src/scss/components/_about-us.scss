@@ -1,0 +1,103 @@
+.about {
+  .slider{
+    &__navigation {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      .slider__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &::before {
+          content: "";
+          display: block;
+          width: 60px;
+          height: 5px;
+          background-color: $color-secondary;
+          border-radius: 50% 0 0 50%;
+          border-radius: 5px;
+          transform: translate(0%, -17px) rotate(45deg);
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 60px;
+          height: 5px;
+          background-color: $color-secondary;
+          border-radius: 50% 0 0 50%;
+          border-radius: 5px;
+          transform: translate(0%, 17px) rotate(-45deg);
+        }
+        &--left {
+          left: 0;
+          transform: scaleX(-1);
+        }
+        &--right {
+          right: 0;
+        }
+      }
+      .slider__members {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translateY(-40%) rotate(-90deg);
+        .members__item {
+          opacity: 0.4;
+          position: relative;
+          padding-bottom: 2em;
+          cursor: pointer;
+          &--active {
+            opacity: 1;
+          }
+          .block-text1 {
+            line-height: 0.8em;
+            position: absolute;
+            width: 100px;
+            text-align: right;
+          }
+          .block-text {
+            line-height: 0.8em;
+            position: absolute;
+            left: calc(100px + 3.2em);
+            white-space: nowrap;
+          }
+          .dot {
+            position: absolute;
+            left: 100px;
+          }
+        }
+      }
+      .slider__title {
+        position: absolute;
+        display: block;
+        top: calc(50% + 40px);
+        left: 60%;
+      }
+    }
+    .slider__item {
+      .item__title {
+        position: absolute;
+        top: 65%;
+        left: 25%;
+        text-align: center;
+        &--color {
+          color: $color-secondary;
+        }
+      }
+      .item__image {
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        max-height: 80vh;
+      }
+      .item__description {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        width: 500px;
+        line-height: 2em;
+      }
+    }
+  }
+}

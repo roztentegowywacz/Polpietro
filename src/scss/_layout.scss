@@ -1,5 +1,5 @@
 .page {
-  font-family: 'Lora', sans-serif;
+  font-family: $font-base;
   font-size: 18px;
   color: $color-primary;
   box-sizing: border-box;
@@ -15,12 +15,45 @@
   padding: 2.5% $layout-side-padding;
 }
 
+.about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: $color-tertiary;
+  padding: 0 $layout-side-padding;
+}
+
 body a {
   text-decoration: none;
   cursor: pointer;
-  color: $color-black;
+  color: $color-primary;
 }
 
 h1 {
   font-size: 5.5em;
+  font-family: $font-second;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2em;
+  font-family: $font-second;
+}
+
+h4 {
+  font-size: 0.65em;
+  text-transform: uppercase;
+  font-family: $font-second;
+  color: $color-secondary;
+}
+
+.dot {
+  width: 0.4em;
+  height: 0.4em;
+  background-color: $color-secondary;
+  border-radius: 50%;
+  margin: 0 0.8em;
+  &--bigger {
+    transform: scale(1.75, 1.75);
+  }
 }

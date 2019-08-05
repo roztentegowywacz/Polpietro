@@ -5,9 +5,14 @@ $color-secondary-lighter: #948077;
 $color-tertiary: #E4DDD8;
 $color-black: #000;
 
-// FONT WEIGHT
+// FONT WEIGHTS
+$weight-light: 300;
 $weight-normal: 400;
 $weight-bolded: 700;
+
+// FONT TYPES
+$font-base: 'Lora', sans-serif;
+$font-second: 'Oswald', sans-serif;
 
 // MEDIA QUERIES
 $xs: ( max: 767px );
@@ -16,4 +21,5 @@ $md: ( min: 992px );
 $lg: ( min: 1200px );
 
 // LAYOUT
+$layout-grid: 5%;
 $layout-side-padding: 10%;
